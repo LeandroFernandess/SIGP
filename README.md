@@ -134,9 +134,9 @@ Caso tenha dúvidas ou sugestões, entre em contato:
 
 - **Nome**: Leandro Fernandes
 - **Email**: leandrofernandes1600@email.com
-- **GitHub**: [https://github.com/se](https://github.com/LeandroFernandess/SIGP](https://github.com/LeandroFernandess/SIGP)
+- **GitHub**: https://github.com/LeandroFernandess/SIGP
 - **Links utilizados**:
-  - FIREBASE: [https://cloud.tembo.io/orgs/org_2rrdBUpzp1gEfGfFusn5XPWcHnR/instances](https://firebase.google.com/?hl=pt-br)
+  - FIREBASE: https://firebase.google.com
 ---
 
 *Documentação atualizada em: `07/09/2025`.* 🚀
