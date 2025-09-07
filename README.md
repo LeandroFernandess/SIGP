@@ -50,7 +50,7 @@ SIGP/
 ├── requirements.txt  
 ```
 
-### Principais Pastas e Arquivos
+## Principais Pastas e Arquivos
 
 - **config/**: Este módulo centraliza todas as variáveis de configuração globais.
 - **Core/**: Módulo de serviço para gerenciar operações de autenticação de usuários, para controlar a interface do usuário (UI) da aplicação Streamlit e gerenciamento para o Firebase.
@@ -58,7 +58,7 @@ SIGP/
 - **app.py**: Este script inicializa os serviços de Firebase e autenticação, e em seguida, inicia o controlador da interface do usuário do Streamlit, orquestrando o fluxo geral da aplicação.
 - **requirements.txt**: Arquivo com as bibliotecas necessárias para rodar o projeto.
 
-### Importante
+### Importante ‼️
 
 É necessário criar uma pasta ".streamlit/" na raiz do projeto e, dentro dela, criar um arquivo com o nome de "secrets.toml".
 Nela se deve armazenar os dados da chave de API do Firebase e as variáveis de ambiente consumidas no "settings.py", todas as informações são fornecedias pelo próprio Firebase.
