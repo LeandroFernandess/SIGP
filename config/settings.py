@@ -9,8 +9,7 @@ a gestão e a atualização das configurações da aplicação em um único loca
 import streamlit as st
 
 # URL do Firebase Cloud Storage bucket.
-# Este é o identificador único do bucket onde os arquivos da aplicação
-# serão armazenados
+# Este é o identificador único do bucket onde os arquivos da aplicação serão armazenados
 FIREBASE_STORAGE_BUCKET = st.secrets["financial"]["FIREBASE_STORAGE_BUCKET"]
 
 # Chave de API Web do Firebase (API Key pública do projeto Firebase).
