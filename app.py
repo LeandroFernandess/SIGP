@@ -7,28 +7,30 @@ orquestrando o fluxo geral da aplicação.
 """
 
 import streamlit as st
+import json
 from core.firebase_manager import FirebaseManager
 from core.auth_service import AuthService
 from core.ui_controller import UIController
 from config.settings import (
-    FIREBASE_KEY_PATH,
     FIREBASE_STORAGE_BUCKET,
     FIREBASE_WEB_API_KEY,
 )
 
 # --- Configurações da Página ---
-
 st.set_page_config(
     page_title="SIGP - Sistema Inteligente de Gestão Pessoal",
     page_icon="🏡",
 )
 
-# --- Inicialização Global dos Serviços (Singleton Pattern para Streamlit) ---
 
+# --- Inicialização Global dos Serviços (Singleton Pattern para Streamlit) ---
 if "fb_manager" not in st.session_state:
     try:
+        # Acessa os segredos diretamente e cria um objeto de credenciais
+        firebase_credentials_dict = dict(st.secrets["firebase"])
+
         st.session_state.fb_manager = FirebaseManager(
-            key_path=FIREBASE_KEY_PATH,
+            key_path=firebase_credentials_dict,
             storage_bucket=FIREBASE_STORAGE_BUCKET,
             web_api_key=FIREBASE_WEB_API_KEY,
         )
@@ -36,6 +38,7 @@ if "fb_manager" not in st.session_state:
     except Exception as e:
         st.error(f"Erro ao inicializar conexão com o servidor: {e} ❌")
         st.stop()
+
 
 # Obtém as instâncias dos serviços do estado da sessão
 fb_manager = st.session_state.fb_manager

@@ -2,3 +2,4 @@ venv
 BKP
 __pycache__
 libs
+.streamlit
