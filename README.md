@@ -1,4 +1,4 @@
-# Sistema inteligente de gestão pessoal 💰
+# Sistema inteligente de gestão pessoal 🌐
 
 Um sistema de gerenciamento financeiro e pessoal desenvolvido com Python, Streamlit e Firebase. 
 O projeto permite acompanhar receitas, despesas, contas fixas, faturas de cartão de crédito e resumos financeiros de forma intuitiva.
