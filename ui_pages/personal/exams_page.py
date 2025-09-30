@@ -36,6 +36,7 @@ def render_exams_page(firebase_manager: FirebaseManager, user_uid: str):
         "Cirurgia Geral",
         "Clínica Médica",
         "Dermatologia",
+        "Dentista",
         "Endocrinologia e Metabologia",
         "Gastroenterologia",
         "Ginecologia e Obstetrícia",
