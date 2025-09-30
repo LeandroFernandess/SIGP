@@ -7,7 +7,6 @@ orquestrando o fluxo geral da aplicação.
 """
 
 import streamlit as st
-import json
 from core.firebase_manager import FirebaseManager
 from core.auth_service import AuthService
 from core.ui_controller import UIController
