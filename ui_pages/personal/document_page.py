@@ -47,9 +47,9 @@ def render_document_page(firebase_manager: FirebaseManager, user_uid: str):
         submitted = st.form_submit_button("Enviar Documento")
 
         if submitted and uploaded_file is not None:
-            if uploaded_file.size > 5 * 1024 * 1024:  # Limite de 5MB
+            if uploaded_file.size > 100 * 1024 * 1024:  # Limite de 100MB
                 st.warning(
-                    "O arquivo é muito grande. O tamanho máximo permitido é 5MB."
+                    "O arquivo é muito grande. O tamanho máximo permitido é 100MB."
                 )
             else:
                 try:
